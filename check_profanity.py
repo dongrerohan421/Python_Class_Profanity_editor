@@ -4,4 +4,6 @@ def read_text(): # define function to read text
 	print (content_of_file)
 	quotes.close() # close opened file
 
+def check_profanity(text_to_check): # define function to check profanity
+
 read_text() # call function
