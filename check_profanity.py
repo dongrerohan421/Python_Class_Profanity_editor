@@ -5,5 +5,6 @@ def read_text(): # define function to read text
 	quotes.close() # close opened file
 
 def check_profanity(text_to_check): # define function to check profanity
-
+	connection = urllib.urlopen("http://www.wdyl.com/profanity?q="+text_to_check) # open connection from internet
+	output = connection.read() # read response from website
 read_text() # call function
