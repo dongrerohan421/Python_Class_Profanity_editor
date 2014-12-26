@@ -12,5 +12,10 @@ def check_profanity(text_to_check): # define function to check profanity
 	output = connection.read() # read response from website
 	print(output)
 	connection.close() # close the connection
-
+	if "true" in output:
+		print ("Profanity alert!!")
+	elif "false" in output :
+		print("This document has no curse words!")
+	else :
+		print ("Could not scan the document properly.")
 read_text() # call function
